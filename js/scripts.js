@@ -1,6 +1,10 @@
 // business logic //
 var numbersBreakDown = function(num) {
   for (i = num; i < num.lenght; i++){
+    if (i === 1){
+      
+    }
+
   }
 }
 
