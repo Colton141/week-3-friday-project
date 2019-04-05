@@ -19,7 +19,7 @@ function numberBreakDown(num) {
   }
 }
 
-console.log(beepBoopArray);
+
 
 
 
