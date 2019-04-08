@@ -27,11 +27,11 @@ This program takes a number that the user has inputed and it down from 0 to the 
 
 ## Technologies Used
 
-HTML
-CSS
-Bootstrap
-JavaScript
-jquery
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
+* jquery
 
 
 Copyright (c) 2019 Colton Lacey
