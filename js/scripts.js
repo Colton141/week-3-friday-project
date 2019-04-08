@@ -1,20 +1,27 @@
 // business logic //
 
+var three = [3]
+var two = [2]
+var one = [1]
+
 var beepBoopArray = [];
 var beepBoopString = beepBoopArray.join("");
 
 //this will change numbers 1, 2, and 3 to "Beep!", "Boop!"", and "I'm sorry, Dave. I'm afraid I can't do that".
 // function numberBreakDown(num) {
-//   for (i = 0; i < num.lenght; i++) {
-//     if (num[i] === 1){
-//       beepBoopArray.push("Beep!");
-//     } else if (num[i] === 2) {
-//       beepBoopArray.push("Boop!");
-//     } else if (num[i] === 3) {
-//       beepBoopArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
-//     } else {
-//       beepBoopArray.push(num[i]);
-//     }
+//   for (var i = 0; i <= num; i++) {
+//       if (three.includes(i)) {
+//         numArray = "I'm sorry, Dave. I'm afraid I can't do that.";
+//         beepBoopArray.push(numArray);
+//       } else  if (two.includes(i)){
+//         numArray = "Boop!";
+//         beepBoopArray.push(numArray);
+//       } else if (one.includes(i)){
+//         numArray = "Beep!";
+//         beepBoopArray.push(numArray);
+//       }else {
+//         beepBoopArray.push(i);
+//       }
 //
 //   }
 // }
@@ -22,36 +29,24 @@ var beepBoopString = beepBoopArray.join("");
 
 //this will change numbers 1, 2, and 3 to "Beep!", "Boop!"", and "I'm sorry, Dave. I'm afraid I can't do that".
 function numberBreakDown(num){
-  for (var i = num; i !=0; i+= 0){
+  var i = 0;
+  for (var i = num; i != -1; i+=0){
     var numArray = (''+num).split("");
-    for (j = 0; j < numArray.length; j+= 1){
-      if ("3".includes(numArray[j])) {
+      if (numArray.includes("3")) {
         beepBoopArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
-        var t = (i - 1);
-        var num = t;
-      } else if ("2".includes(numArray[j])){
+      } else  if (numArray.includes("2")) {
         beepBoopArray.push("Boop!");
-        var t = (i - 1);
-        var num = t;
-      } else if ("1".includes(numArray[j])){
+      } else if (numArray.includes("1")) {
         beepBoopArray.push("Beep!");
-        var t = (i - 1);
-        var num = t;
       } else {
-        var numPush = numArray.join('');
-        beepBoopArray.push(numPush);
-        var t = (i - 1);
-        var num = t;
+        beepBoopArray.push(num);
       }
+      var i = (i - 1);
+      var num = i;
     }
   }
-}
 
-// beepBoopArray.push("0");
 
-var n = 12345678910 ;
-var digits = (''+n).split('');
-console.log(digits);
 
 
 
@@ -63,6 +58,6 @@ $(document).ready(function(){
     numberBreakDown(num);
     console.log(beepBoopArray);
     console.log(beepBoopString);
-  })
+  });
 
-})
+});
