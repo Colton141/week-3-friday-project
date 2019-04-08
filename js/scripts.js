@@ -1,7 +1,6 @@
 // business logic //
 
 var beepBoopArray = [];
-var beepBoopString = beepBoopArray.join("");
 
 
 //this will change numbers 1, 2, and 3 to "Beep!", "Boop!"", and "I'm sorry, Dave. I'm afraid I can't do that".
@@ -27,14 +26,14 @@ function numberBreakDown(num){
 
 
 
+
 // front-end (interface) logic
 $(document).ready(function(){
   $("form#beep-boop").submit(function(event){
     event.preventDefault();
     var num = $("input#userNumber").val();
     numberBreakDown(num);
-    console.log(beepBoopArray);
-    console.log(beepBoopString);
+    var beepBoopString = beepBoopArray.reverse().join(", ");
+    $(".result").text(beepBoopString);
   });
-
 });
