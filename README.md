@@ -1,37 +1,37 @@
-# _{Application Name}_
+#  Beep!Boop!
 
-#### _{Brief description of application}, {Date of current version}_
+#### breaks down numbers and replace them with beep boop.
 
-#### By _**{List of contributors}**_
+#### By Colton Lacey
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+This program takes a number that the user has inputed and it down from 0 to the number to user put. Then it takes ever number that has a 3 in it and replaces that number in the sting of number with "I'm sorry Dave. I'm afraid I can't do that!". It then takes every number that has a 2 in it and replaces that number in the string with "Boop!". it will also then take every number that has a 1 in it and replaces that number with "Beep!". Last it takes this new string and displays it back to the user.
+
+## Spec Sheet
+
+| Behavior      |      Input         | Output |
+| ------------- |:-------------:     | -----:|
+| The program returns a range of numbers from 0 to the users inputted number     | 4     | 0,2,3,4 |
+| The program will take every number that has a 3 in it and returns "I'm sorry Dave. I'm afraid I can't do that"| 3 |   1, 2, I'm sorry Dave.... |
+| The program takes ever number in the range that has a 2 in it and returns "Boop!" for the whole number | 2   |  1, Boop! |
+|The prgram takes every number in the range that has a 1 in it and returns "Beep!" for the whole number| 3 | Beep!, Boop!, I'm sorry Dave... |
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Clone down this repo to your local files
+* Open the files in your folder
+* Open the index.html file in your local browser
+* enter in your number and see your results
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
-
-## Known Bugs
-
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
-
-## Support and contact details
-
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+HTML
+CSS
+Bootstrap
+JavaScript
+jquery
 
-### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
-
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2019 Colton Lacey
