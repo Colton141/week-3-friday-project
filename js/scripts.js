@@ -1,30 +1,7 @@
 // business logic //
 
-var three = [3]
-var two = [2]
-var one = [1]
-
 var beepBoopArray = [];
 var beepBoopString = beepBoopArray.join("");
-
-//this will change numbers 1, 2, and 3 to "Beep!", "Boop!"", and "I'm sorry, Dave. I'm afraid I can't do that".
-// function numberBreakDown(num) {
-//   for (var i = 0; i <= num; i++) {
-//       if (three.includes(i)) {
-//         numArray = "I'm sorry, Dave. I'm afraid I can't do that.";
-//         beepBoopArray.push(numArray);
-//       } else  if (two.includes(i)){
-//         numArray = "Boop!";
-//         beepBoopArray.push(numArray);
-//       } else if (one.includes(i)){
-//         numArray = "Beep!";
-//         beepBoopArray.push(numArray);
-//       }else {
-//         beepBoopArray.push(i);
-//       }
-//
-//   }
-// }
 
 
 //this will change numbers 1, 2, and 3 to "Beep!", "Boop!"", and "I'm sorry, Dave. I'm afraid I can't do that".
